@@ -12,14 +12,6 @@ class Signup extends React.Component {
 
     this.handleInput = this.handleInput.bind(this)
   }
-
-  // handleInput(type) {
-  //   return (e) => {
-  //     this.setState({
-  //       [type]: e.currentTarget.value
-  //     })
-  //   }
-  // }
   
   handleInput(e, type) {
     this.setState({
@@ -31,15 +23,6 @@ class Signup extends React.Component {
     e.preventDefault()
 
     this.props.createNewUser(this.state)
-    // .then(
-    //   createdUser => {
-    //     console.log('about to push "/chirps" to history')
-    //     this.props.history.push('/chirps')
-    //   },
-    //   err => {
-    //     console.log(err)
-    //   }
-    // )
   }
 
   render() {

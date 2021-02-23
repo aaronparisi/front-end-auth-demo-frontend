@@ -27,6 +27,7 @@ export const postSession = user => {
 
 // log out a user (delete a session)
 export const deleteSession = () => {
+  console.log('about to make axios delete request')
   return axios({
     method: 'delete',
     url: '/api/session'

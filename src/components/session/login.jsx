@@ -5,9 +5,9 @@ class Login extends React.Component {
     super(props)
 
     this.state = {
-      username: '',
-      email: '',
-      password: ''
+      username: 'fake-user',
+      email: 'fake@user.com',
+      password: 'password'
     }
 
     this.handleInput = this.handleInput.bind(this)
@@ -23,15 +23,6 @@ class Login extends React.Component {
     e.preventDefault()
 
     this.props.login(this.state)
-    // .then(
-    //   currentUser => {
-    //     console.log('logged in successfully, about to push "/chirps" to history')
-    //     this.props.history.push('/chirps')
-    //   },
-    //   err => {
-    //     console.log(err)
-    //   }
-    // )
   }
 
   render() {
