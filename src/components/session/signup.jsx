@@ -5,9 +5,9 @@ class Signup extends React.Component {
     super(props)
 
     this.state = {
-      username: 'darthVad3r',
-      email: 'lord@sith.com',
-      password: 'password'
+      username: '',
+      email: '',
+      password: ''
     }
 
     this.handleInput = this.handleInput.bind(this)
