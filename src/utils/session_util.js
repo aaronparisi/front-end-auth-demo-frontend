@@ -3,7 +3,8 @@ import axios from "axios"
 export const getCurrentUser = () => {
   return axios({
     method: 'get',
-    url: '/api/users/current-user'
+    url: '/api/users/current-user',
+    withCredentials: 'include'
   })
 }
 
@@ -12,7 +13,8 @@ export const postUser = user => {
   return axios({
     method: 'post',
     url: '/api/users',
-    data: { user }
+    data: { user },
+    withCredentials: 'include'
   })
 }
 
@@ -21,7 +23,8 @@ export const postSession = user => {
   return axios({
     method: 'post',
     url: '/api/session',
-    data: { user }
+    data: { user },
+    withCredentials: 'include'
   })
 }
 
