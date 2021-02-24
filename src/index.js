@@ -12,7 +12,9 @@ import { fetchCurrentUser } from './actions/session_actions'
 const axios = require('axios').default
 if (process.env.NODE_ENV === "production") {
   // ! change this when you deploy
-  axios.defaults.baseURL = 'https://frontend-auth-api.herokuapp.com'
+  // axios.defaults.baseURL = 'https://frontend-auth-api.herokuapp.com'
+  axios.defaults.baseURL = 'http://localhost:3000'
+  axios.defaults.withCredentials = true
 } else {
   axios.defaults.baseURL = 'http://localhost:3000'
   axios.defaults.withCredentials = true
