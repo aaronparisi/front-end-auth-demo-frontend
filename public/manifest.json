@@ -1,6 +1,6 @@
 {
-  "short_name": "CloseWeUI",
-  "name": "The front-end UI for CloseWe",
+  "short_name": "FrontendAuth",
+  "name": "The front-end UI for FrontendAuth",
   "icons": [
     {
       "src": "favicon.ico",
